@@ -24,14 +24,14 @@ nb_epoch = 100
 # input image dimensions
 img_rows, img_cols = 28, 28
 # number of convolutional filters to use
-nb_filters1 = 20
-nb_filters2 = 40
+nb_filters1 = 30
+nb_filters2 = 15
 # size of pooling area for max pooling
 pool_size1 = (2, 2)
 pool_size2 = (2, 2)
 # convolution kernel size
 kernel_size1 = (5, 5)
-kernel_size2 = (5, 5)
+kernel_size2 = (3, 3)
 
 # the data, shuffled and split between train and test sets
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
