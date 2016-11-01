@@ -86,7 +86,7 @@ model.add(Dense(nb_classes))
 model.add(Activation('softmax'))
 model.add(Dropout(0.25))
 
-sgd = SGD(lr=0.1)
+sgd=keras.optimizers.SGD(lr=0.1, momentum=0.0, decay=0.0, nesterov=False)
 model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
 
 model.fit(X_train, Y_train, batch_size=batch_size, nb_epoch=nb_epoch, verbose=1, validation_data=(X_test, Y_test))
